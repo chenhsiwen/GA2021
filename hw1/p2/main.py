@@ -9,7 +9,7 @@ from itertools import product
 cross_types = [ 'one', 'uniform', 'position', 'perfect']
 ell = 10
 n_bits = [50 * (i + 1) for i in range(ell)]
-num_exp = 25
+num_exp = 30
 
 def job(task):
     [cross_type, n_bit] = task
