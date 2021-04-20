@@ -39,11 +39,10 @@ if __name__ == '__main__':
         exp = list(p.map(job, tasks))
         p.close()
     exp = np.array(exp).reshape(len(cross_types), len(n_bits), len(exp[0]))
-    save(exp, 'covergence.pkl')
-    exp = load('covergence.pkl')
+    save(exp, 'covergence30.pkl')
+    exp = load('covergence30.pkl')
     pretty_print(exp)
     print(exp)
     te = time.time()
     print('time: {}'.format(te-ts))
 
-    
